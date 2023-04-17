@@ -1,0 +1,28 @@
+html {
+  margin: 50px;
+}
+
+.checkbox_input {
+  display: none;
+}
+
+.checkbox_box {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox_box::after {
+  content: "\2714";
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.checkbox_input:checked+.checkbox_box {
+  background-color: #2266dc;
+  border: none;
+}
